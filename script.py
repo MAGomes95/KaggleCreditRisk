@@ -207,7 +207,7 @@ def train_model(data_, test_, y_, folds_):
         del clf, trn_x, trn_y, val_x, val_y
         gc.collect()
         
-    print('Full AUC score %.6f' % roc_auc_score(y, oof_preds)) 
+    print('Full AUC score %.6f' % roc_auc_score(y_, oof_preds)) 
     
     test_['TARGET'] = sub_preds
 
